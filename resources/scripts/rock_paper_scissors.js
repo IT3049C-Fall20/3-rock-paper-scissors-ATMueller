@@ -39,7 +39,6 @@ class RockPaperScissors {
     }else{
       return "lose";
     }
-    
   }
 
   /**
@@ -47,7 +46,7 @@ class RockPaperScissors {
    * @param {string} userSelection user selection. Can only be one of the following values [`rock`, `paper`, `scissors`]
    */
   play(userSelection){
-
+    
   }
 
 }
