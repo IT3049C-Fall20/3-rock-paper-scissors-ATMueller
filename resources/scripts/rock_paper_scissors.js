@@ -13,7 +13,7 @@ class RockPaperScissors {
    * using Math.random() method, you should be able to get one of the following values
    */
   generateCPUResponse(){
-    const acceptedValues = [ `Rock`, `Paper`, `Scissors` ];
+    const acceptedValues = [ `rock`, `paper`, `scissors` ];
     var choice = Math.floor(Math.random() * Math.floor(3));
     return acceptedValues[choice];
   }
@@ -35,7 +35,7 @@ class RockPaperScissors {
   determineWinner(userSelection, cpuSelection){
     if(userSelection == cpuSelection){
       return "tie";
-    }else if((userSelection == "Rock" && cpuSelection == "Scissors") || (userSelection == "Paper" && cpuSelection == "Rock") || (userSelection == "Scissors" && cpuSelection == "Paper")){
+    }else if((userSelection === "rock" && cpuSelection === "scissors") || (userSelection === "paper" && cpuSelection === "rock") || (userSelection === "scissors" && cpuSelection === "paper")){
       return "win";
     }else{
       return "lose";
