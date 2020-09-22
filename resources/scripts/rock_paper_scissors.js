@@ -33,7 +33,7 @@ class RockPaperScissors {
    * @param {string} cpuSelection computer selection. Can only be one of the following values [`rock`, `paper`, `scissors`]
    */
   determineWinner(userSelection, cpuSelection){
-    if(userSelection == cpuSelection){
+    if(userSelection === cpuSelection){
       return "tie";
     }else if((userSelection === "Rock" && cpuSelection === "scissors") || (userSelection === "Paper" && cpuSelection === "rock") || (userSelection === "Scissors" && cpuSelection === "paper")){
       return "win";
